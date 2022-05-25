@@ -52,6 +52,7 @@ function App() {
         title={'Редактировать профиль'}
         isOpen={isEditProfilePopupOpen}
         onClose={closeAllPopups}
+        buttonText={'Сохранить'}
       >
         <fieldset className="popup__set">
           <label className="popup__label-input">
@@ -81,9 +82,6 @@ function App() {
             />
             <span className="popup__input-error job-error"></span>
           </label>
-          <button className="popup__submit" type="submit">
-            Сохранить
-          </button>
         </fieldset>
       </PopupWithForm>
 
@@ -92,6 +90,7 @@ function App() {
         title={'Новое место'}
         isOpen={isAddPlacePopupOpen}
         onClose={closeAllPopups}
+        buttonText={'Создать'}
       >
         <fieldset className="popup__set">
           <label className="popup__label-input">
@@ -119,9 +118,6 @@ function App() {
             />
             <span className="popup__input-error link-error"></span>
           </label>
-          <button className="popup__submit" type="submit">
-            Создать
-          </button>
         </fieldset>
       </PopupWithForm>
 
@@ -130,6 +126,7 @@ function App() {
         title={'Обновить аватар'}
         isOpen={isEditAvatarPopupOpen}
         onClose={closeAllPopups}
+        buttonText={'Сохранить'}
       >
         <fieldset className="popup__set">
           <label className="popup__label-input">
@@ -143,13 +140,10 @@ function App() {
             />
             <span className="popup__input-error link-error"></span>
           </label>
-          <button className="popup__submit" type="submit">
-            Сохранить
-          </button>
         </fieldset>
       </PopupWithForm>
 
-      <PopupWithForm name={'del'} title={'Вы уверены?'}></PopupWithForm>
+      <PopupWithForm name={'del'} title={'Вы уверены?'} buttonText={'Да'}></PopupWithForm>
 
       <ImagePopup card={selectedCard} onClose={closeAllPopups} />
     </>
