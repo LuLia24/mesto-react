@@ -1,0 +1,24 @@
+.profile__avatar-container {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  .profile__avatar-container:after {
+    position: absolute;
+    visibility: hidden;
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../../images/pencil.svg');
+    cursor: pointer;
+  }
+  .profile__avatar-container:hover:after {
+    visibility: visible;
+  }

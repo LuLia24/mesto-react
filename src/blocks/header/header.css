@@ -1,0 +1,13 @@
+.header {
+  color: #ffffff;
+  padding: 28px 0 31px 27px;
+  border-bottom-width: 1px; /* Толщина линии внизу */
+  border-bottom-style: solid;
+  border-bottom-color: rgba(84, 84, 84, 0.7);
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 45px 0 41px 0;
+  }
+}

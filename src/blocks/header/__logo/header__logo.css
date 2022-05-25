@@ -1,0 +1,12 @@
+.header__logo {
+  width: 103px;
+  height: 24px;
+}
+
+/* для экранов 1280 и больше */
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    width: 142px;
+    height: 33px;
+  }
+}
