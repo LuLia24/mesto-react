@@ -114,11 +114,11 @@ function App() {
     api
       .deleteCard(card._id)
       .then((res) => {
-        setCards(
-          cards.filter((item) => {
+        setCards((prevCards) => {
+          return prevCards.filter((item) => {
             return !(item._id === card._id);
-          })
-        );
+          });
+        });
       })
       .catch((err) => {
         console.log(err);
