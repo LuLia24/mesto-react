@@ -24,4 +24,4 @@
 
 **Ссылка на проект**
 
-- [Ссылка] (https://lulia24.github.io/mesto-react/)
+- [Ссылка] (mesto-react.netlify.app)
