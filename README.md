@@ -24,4 +24,4 @@
 
 **Ссылка на проект**
 
-- [Ссылка](mesto-react.netlify.app)
+- [Ссылка](https://mesto-react.netlify.app)
